@@ -2,6 +2,7 @@ import math
 
 #trouver une racine d'une fonction avec la methode de newton et calculer une intégrale avec la méthode du trapèze
 def newton_method(f, df, x0, tol=1e-10, max_iter=100):
+    x = x0
    
     for i in range(1, max_iter + 1):
         fx = f(x)
